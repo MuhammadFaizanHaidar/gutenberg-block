@@ -1,0 +1,43 @@
+{
+  "name": "myguten-block",
+  "version": "1.0.0",
+  "description": "Gutenberg Custom block plugin",
+  "author": "Muhammad Faizan Haidar",
+  "license": "GPL-2.0-or-later",
+  "keywords": [
+    "gutenberg",
+    "blocks"
+  ],
+  "homepage": "https://github.com/MuhammadFaizanHaidar/gutenberg-block",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MuhammadFaizanHaidar/gutenberg-block"
+  },
+  "bugs": {
+    "url": "https://github.com/MuhammadFaizanHaidar/gutenberg-block",
+    "email": "faizanhaider594@gmail.com"
+  },
+  "main": "index.js",
+  "devDependencies": {
+    "@wordpress/scripts": "12.1.1"
+  },
+  "scripts": {
+    "build": "wp-scripts build",
+    "check-engines": "wp-scripts check-engines",
+    "check-licenses": "wp-scripts check-licenses --prod --gpl2 --ignore=abab",
+    "format:js": "wp-scripts format-js",
+    "lint:js": "wp-scripts lint-js",
+    "lint:js-fix": "wp-scripts lint-js src/index.js --fix",
+    "lint:css": "wp-scripts lint-style",
+    "lint:md:docs": "wp-scripts lint-md-docs",
+    "lint:md:js": "wp-scripts lint-md-js",
+    "lint:pkg-json": "wp-scripts lint-pkg-json",
+    "packages-update": "wp-scripts packages-update",
+    "start": "wp-scripts start",
+    "test:e2e": "wp-scripts test-e2e",
+    "test:unit": "wp-scripts test-unit-js"
+  },
+  "dependencies": {
+    "@wordpress/block-serialization-default-parser": "^3.7.0"
+  }
+}
